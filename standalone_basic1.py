@@ -13,9 +13,9 @@ stage = omni.usd.get_context().get_stage()              # 3. Stage
 cube_prim = DynamicCuboid(                              # 4. Prim
     prim_path="/World/BlueCube",
     name="blue_cube",
-    position=np.array([0.0, 0.0, 0.5]),
+    position=np.array([0.0, 0.0, 1.0]),
     scale=np.array([0.15, 0.15, 0.15]),
-    color=np.array([0.0, 0.0, 1.0]),
+    color=np.array([1.0, 0.0, 0.0]),
 )
 
 world.scene.add_default_ground_plane()                  # 5. Scene
