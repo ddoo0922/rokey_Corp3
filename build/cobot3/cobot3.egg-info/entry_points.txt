@@ -1,0 +1,4 @@
+[console_scripts]
+my_listener = cobot3.listener:main
+my_talker = cobot3.talker:main
+
