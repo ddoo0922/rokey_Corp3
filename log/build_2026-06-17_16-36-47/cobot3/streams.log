@@ -1,0 +1,29 @@
+[0.225s] Invoking command in '/home/rokey/cobot3_ws/src/cobot3': PYTHONPATH=/home/rokey/cobot3_ws/build/cobot3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cobot3 build --build-base /home/rokey/cobot3_ws/build/cobot3/build install --record /home/rokey/cobot3_ws/build/cobot3/install.log --single-version-externally-managed install_data
+[0.311s] running egg_info
+[0.311s] writing ../../build/cobot3/cobot3.egg-info/PKG-INFO
+[0.311s] writing dependency_links to ../../build/cobot3/cobot3.egg-info/dependency_links.txt
+[0.311s] writing entry points to ../../build/cobot3/cobot3.egg-info/entry_points.txt
+[0.311s] writing requirements to ../../build/cobot3/cobot3.egg-info/requires.txt
+[0.311s] writing top-level names to ../../build/cobot3/cobot3.egg-info/top_level.txt
+[0.312s] reading manifest file '../../build/cobot3/cobot3.egg-info/SOURCES.txt'
+[0.312s] adding license file 'LICENSE'
+[0.312s] writing manifest file '../../build/cobot3/cobot3.egg-info/SOURCES.txt'
+[0.312s] running build
+[0.312s] running build_py
+[0.312s] copying cobot3/talker.py -> /home/rokey/cobot3_ws/build/cobot3/build/lib/cobot3
+[0.312s] copying cobot3/listener.py -> /home/rokey/cobot3_ws/build/cobot3/build/lib/cobot3
+[0.312s] running install
+[0.312s] running install_lib
+[0.313s] copying /home/rokey/cobot3_ws/build/cobot3/build/lib/cobot3/talker.py -> /home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages/cobot3
+[0.313s] copying /home/rokey/cobot3_ws/build/cobot3/build/lib/cobot3/listener.py -> /home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages/cobot3
+[0.313s] byte-compiling /home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages/cobot3/talker.py to talker.cpython-310.pyc
+[0.313s] byte-compiling /home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages/cobot3/listener.py to listener.cpython-310.pyc
+[0.314s] running install_data
+[0.314s] running install_egg_info
+[0.314s] removing '/home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages/cobot3-0.0.0-py3.10.egg-info' (and everything under it)
+[0.314s] Copying ../../build/cobot3/cobot3.egg-info to /home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages/cobot3-0.0.0-py3.10.egg-info
+[0.314s] running install_scripts
+[0.325s] Installing my_listener script to /home/rokey/cobot3_ws/install/cobot3/lib/cobot3
+[0.325s] Installing my_talker script to /home/rokey/cobot3_ws/install/cobot3/lib/cobot3
+[0.325s] writing list of installed files to '/home/rokey/cobot3_ws/build/cobot3/install.log'
+[0.342s] Invoked command in '/home/rokey/cobot3_ws/src/cobot3' returned '0': PYTHONPATH=/home/rokey/cobot3_ws/build/cobot3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/cobot3 build --build-base /home/rokey/cobot3_ws/build/cobot3/build install --record /home/rokey/cobot3_ws/build/cobot3/install.log --single-version-externally-managed install_data
