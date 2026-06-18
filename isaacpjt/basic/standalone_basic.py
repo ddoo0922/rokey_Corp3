@@ -23,7 +23,15 @@ world.scene.add(cube_prim)
 
 world.reset()
 
+# --- 이 부분이 스크린샷의 루프 제어 코드가 합쳐진 부분입니다 ---
+step_count = 0
+
 while simulation_app.is_running():                      # 6. Simulation
     world.step(render=True)
+    time.sleep(0.01)
+    step_count += 1
+    
+    # 💡 여기서 step_count 조건을 이용해 무언가를 제어할 수 있습니다!
+    # 예: if step_count == 100: ...
 
 simulation_app.close()
