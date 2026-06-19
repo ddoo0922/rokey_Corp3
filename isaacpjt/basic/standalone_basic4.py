@@ -1,5 +1,5 @@
 from isaacsim import SimulationApp
-simulation_app = SimulationApp({"headless": False})
+simulation_app = SimulationApp({"headless": False})     # 1. Application
 
 import numpy as np
 import time
@@ -7,42 +7,30 @@ import omni.usd
 from isaacsim.core.api import World
 from isaacsim.core.api.objects import DynamicCuboid
 
-world = World(stage_units_in_meters=1.0)
-stage = omni.usd.get_context().get_stage()
+world = World(stage_units_in_meters=1.0)                # 2. World
+stage = omni.usd.get_context().get_stage()              # 3. Stage
 
-red_cube = DynamicCuboid(
+cube_1 = DynamicCuboid(                              # 4. Prim
     prim_path="/World/RedCube",
     name="red_cube",
-    position=np.array([1.0, 1.0, 1.5]),
+    position=np.array([0.3, 0.3, 0.3]),
     scale=np.array([0.15, 0.15, 0.15]),
     color=np.array([1.0, 0.0, 0.0]),
 )
 
-green_cube = DynamicCuboid(
-    prim_path="/World/GreenCube",
-    name="green_cube",
-    position=np.array([0.0, 0.0, 2.0]),
-    scale=np.array([0.15, 0.15, 0.15]),
-    color=np.array([0.0, 1.0, 0.0]),
-)
 
-blue_cube = DynamicCuboid(
-    prim_path="/World/BlueCube",
-    name="blue_cube",
-    position=np.array([-1.0, -1.0, 2.5]),
-    scale=np.array([0.15, 0.15, 0.15]),
-    color=np.array([0.0, 0.0, 1.0]),
-)
 
-world.scene.add_default_ground_plane()
-
-world.scene.add(red_cube)
-world.scene.add(green_cube)
-world.scene.add(blue_cube)
+world.scene.add_default_ground_plane()                  # 5. Scene
+world.scene.add(cube_1)
 
 world.reset()
 
+step_count = 0
 while simulation_app.is_running():
     world.step(render=True)
+    time.sleep(0.01)
+    step_count += 1
+    if step_count % 100 == 0:
+        print(f"step: {step_count}")
 
 simulation_app.close()
