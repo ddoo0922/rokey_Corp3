@@ -1,0 +1,29 @@
+{
+  "description": "Virtual top depth scanner based upper surface geometry information",
+  "num_surface_points": 3600,
+  "surface_center_m": [
+    0.49999967217445374,
+    0.5,
+    1.0
+  ],
+  "surface_min_m": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "surface_max_m": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "surface_size_m": [
+    1.0,
+    1.0,
+    0.0
+  ],
+  "height_min_m": 1.0,
+  "height_max_m": 1.0,
+  "height_mean_m": 1.0,
+  "height_range_m": 0.0,
+  "height_range_cm": 0.0
+}

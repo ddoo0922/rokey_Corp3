@@ -1,0 +1,18 @@
+isaac_sim_version: "6.0"
+
+sensor:
+  type: "rtx_lidar"
+  path: "/World/TopLidar"
+  config: "Example_Rotary"
+  position_m: [0.65, 0.0, 1.60]
+  orientation_wxyz: [1.0, 0.0, 0.0, 0.0]
+  scan_rate_hz: 10
+
+object:
+  prim_path: "/World/ScanObject"
+
+output:
+  pointcloud_ply: "output/pointcloud/object_scan.ply"
+  pointcloud_pcd: "output/pointcloud/object_scan.pcd"
+  mesh_info_json: "output/mesh/object_mesh_info.json"
+  pose_json: "output/pose/object_pose.json"

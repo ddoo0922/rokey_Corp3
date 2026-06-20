@@ -1,0 +1,29 @@
+{
+  "description": "Curved upper surface geometry information for sanding and polishing path planning",
+  "num_surface_points": 6400,
+  "surface_center_m": [
+    -4.76837147544984e-09,
+    1.1175870645585562e-10,
+    0.193532332777977
+  ],
+  "surface_min_m": [
+    -0.5,
+    -0.5,
+    0.13875000178813934
+  ],
+  "surface_max_m": [
+    0.5,
+    0.5,
+    0.22623397409915924
+  ],
+  "surface_size_m": [
+    1.0,
+    1.0,
+    0.0874839723110199
+  ],
+  "height_min_m": 0.13875000178813934,
+  "height_max_m": 0.22623397409915924,
+  "height_mean_m": 0.19353288412094116,
+  "height_range_m": 0.0874839723110199,
+  "height_range_cm": 8.74839723110199
+}
