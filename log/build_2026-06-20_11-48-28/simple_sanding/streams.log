@@ -1,0 +1,25 @@
+[0.863s] Invoking command in '/home/rokey/cobot3_ws/src/simple_sanding': PYTHONPATH=/home/rokey/cobot3_ws/build/simple_sanding/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_sanding build --build-base /home/rokey/cobot3_ws/build/simple_sanding/build install --record /home/rokey/cobot3_ws/build/simple_sanding/install.log --single-version-externally-managed install_data
+[1.164s] running egg_info
+[1.166s] writing ../../build/simple_sanding/simple_sanding.egg-info/PKG-INFO
+[1.166s] writing dependency_links to ../../build/simple_sanding/simple_sanding.egg-info/dependency_links.txt
+[1.166s] writing entry points to ../../build/simple_sanding/simple_sanding.egg-info/entry_points.txt
+[1.167s] writing requirements to ../../build/simple_sanding/simple_sanding.egg-info/requires.txt
+[1.167s] writing top-level names to ../../build/simple_sanding/simple_sanding.egg-info/top_level.txt
+[1.169s] reading manifest file '../../build/simple_sanding/simple_sanding.egg-info/SOURCES.txt'
+[1.171s] writing manifest file '../../build/simple_sanding/simple_sanding.egg-info/SOURCES.txt'
+[1.171s] running build
+[1.171s] running build_py
+[1.171s] copying simple_sanding/sanding_config.py -> /home/rokey/cobot3_ws/build/simple_sanding/build/lib/simple_sanding
+[1.172s] running install
+[1.172s] running install_lib
+[1.173s] copying /home/rokey/cobot3_ws/build/simple_sanding/build/lib/simple_sanding/sanding_config.py -> /home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding
+[1.174s] byte-compiling /home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding/sanding_config.py to sanding_config.cpython-310.pyc
+[1.175s] running install_data
+[1.175s] running install_egg_info
+[1.177s] removing '/home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding-0.0.0-py3.10.egg-info' (and everything under it)
+[1.177s] Copying ../../build/simple_sanding/simple_sanding.egg-info to /home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding-0.0.0-py3.10.egg-info
+[1.178s] running install_scripts
+[1.201s] Installing run_sanding script to /home/rokey/cobot3_ws/install/simple_sanding/lib/simple_sanding
+[1.201s] Installing test_path script to /home/rokey/cobot3_ws/install/simple_sanding/lib/simple_sanding
+[1.202s] writing list of installed files to '/home/rokey/cobot3_ws/build/simple_sanding/install.log'
+[1.230s] Invoked command in '/home/rokey/cobot3_ws/src/simple_sanding' returned '0': PYTHONPATH=/home/rokey/cobot3_ws/build/simple_sanding/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_sanding build --build-base /home/rokey/cobot3_ws/build/simple_sanding/build install --record /home/rokey/cobot3_ws/build/simple_sanding/install.log --single-version-externally-managed install_data

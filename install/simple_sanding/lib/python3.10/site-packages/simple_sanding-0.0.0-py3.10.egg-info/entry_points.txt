@@ -1,0 +1,4 @@
+[console_scripts]
+run_sanding = simple_sanding.sanding_node:main
+test_path = simple_sanding.path_generator:main
+

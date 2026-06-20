@@ -1,0 +1,26 @@
+[0.777s] Invoking command in '/home/rokey/cobot3_ws/build/cobot3': PYTHONPATH=/home/rokey/cobot3_ws/build/cobot3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rokey/cobot3_ws/build/cobot3/build --no-deps symlink_data
+[1.132s] running develop
+[1.397s] running egg_info
+[1.397s] creating cobot3.egg-info
+[1.398s] writing cobot3.egg-info/PKG-INFO
+[1.399s] writing dependency_links to cobot3.egg-info/dependency_links.txt
+[1.400s] writing entry points to cobot3.egg-info/entry_points.txt
+[1.400s] writing requirements to cobot3.egg-info/requires.txt
+[1.400s] writing top-level names to cobot3.egg-info/top_level.txt
+[1.400s] writing manifest file 'cobot3.egg-info/SOURCES.txt'
+[1.404s] reading manifest file 'cobot3.egg-info/SOURCES.txt'
+[1.405s] writing manifest file 'cobot3.egg-info/SOURCES.txt'
+[1.408s] running build_ext
+[1.408s] Creating /home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages/cobot3.egg-link (link to .)
+[1.409s] Installing m0609_color_detector script to /home/rokey/cobot3_ws/install/cobot3/lib/cobot3
+[1.409s] Installing my_listener script to /home/rokey/cobot3_ws/install/cobot3/lib/cobot3
+[1.409s] Installing my_talker script to /home/rokey/cobot3_ws/install/cobot3/lib/cobot3
+[1.409s] 
+[1.409s] Installed /home/rokey/cobot3_ws/build/cobot3
+[1.409s] running symlink_data
+[1.410s] creating /home/rokey/cobot3_ws/install/cobot3/share/ament_index
+[1.410s] creating /home/rokey/cobot3_ws/install/cobot3/share/ament_index/resource_index
+[1.410s] creating /home/rokey/cobot3_ws/install/cobot3/share/ament_index/resource_index/packages
+[1.410s] symbolically linking /home/rokey/cobot3_ws/build/cobot3/resource/cobot3 -> /home/rokey/cobot3_ws/install/cobot3/share/ament_index/resource_index/packages
+[1.410s] symbolically linking /home/rokey/cobot3_ws/build/cobot3/package.xml -> /home/rokey/cobot3_ws/install/cobot3/share/cobot3
+[1.487s] Invoked command in '/home/rokey/cobot3_ws/build/cobot3' returned '0': PYTHONPATH=/home/rokey/cobot3_ws/build/cobot3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rokey/cobot3_ws/build/cobot3/build --no-deps symlink_data

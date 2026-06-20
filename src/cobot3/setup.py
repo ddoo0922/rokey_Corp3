@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
         'my_talker = cobot3.talker:main',
         'my_listener = cobot3.listener:main',
+	'm0609_color_detector = cobot3.m0609_color_detector:main',
         ],
     },
 )

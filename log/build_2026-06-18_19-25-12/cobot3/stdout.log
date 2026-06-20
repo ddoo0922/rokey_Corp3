@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing cobot3.egg-info/PKG-INFO
+writing dependency_links to cobot3.egg-info/dependency_links.txt
+writing entry points to cobot3.egg-info/entry_points.txt
+writing requirements to cobot3.egg-info/requires.txt
+writing top-level names to cobot3.egg-info/top_level.txt
+reading manifest file 'cobot3.egg-info/SOURCES.txt'
+writing manifest file 'cobot3.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages/cobot3.egg-link (link to .)
+Installing m0609_color_detector script to /home/rokey/cobot3_ws/install/cobot3/lib/cobot3
+Installing my_listener script to /home/rokey/cobot3_ws/install/cobot3/lib/cobot3
+Installing my_talker script to /home/rokey/cobot3_ws/install/cobot3/lib/cobot3
+
+Installed /home/rokey/cobot3_ws/build/cobot3
+running symlink_data

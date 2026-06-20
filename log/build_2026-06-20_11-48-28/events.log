@@ -1,0 +1,43 @@
+[0.000000] (-) TimerEvent: {}
+[0.000161] (-) JobUnselected: {'identifier': 'cobot3'}
+[0.000277] (simple_sanding) JobQueued: {'identifier': 'simple_sanding', 'dependencies': OrderedDict()}
+[0.000330] (simple_sanding) JobStarted: {'identifier': 'simple_sanding'}
+[0.099194] (-) TimerEvent: {}
+[0.202358] (-) TimerEvent: {}
+[0.302801] (-) TimerEvent: {}
+[0.403172] (-) TimerEvent: {}
+[0.503622] (-) TimerEvent: {}
+[0.603949] (-) TimerEvent: {}
+[0.704299] (-) TimerEvent: {}
+[0.804619] (-) TimerEvent: {}
+[0.859178] (simple_sanding) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/simple_sanding', 'build', '--build-base', '/home/rokey/cobot3_ws/build/simple_sanding/build', 'install', '--record', '/home/rokey/cobot3_ws/build/simple_sanding/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/rokey/cobot3_ws/src/simple_sanding', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/rokey', 'SVGA_VGPU10': '0', 'LANGUAGE': 'ko:en', 'USER': 'rokey', 'LC_TIME': 'ko_KR.UTF-8', 'VSCODE_NLS_CONFIG': '{"userLocale":"ko","osLocale":"ko","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/antigravity/resources/app/out/nls.messages.json","locale":"ko","availableLanguages":{}}', 'XDG_SESSION_TYPE': 'wayland', '__GLX_VENDOR_LIBRARY_NAME': 'mesa', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/rokey', 'CHROME_DESKTOP': 'antigravity.desktop', 'PARENT_WINDOW_ID': '', 'OLDPWD': '/home/rokey/cobot3_ws', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-fc97eaf6-1.10-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/antigravity.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1718', 'SYSTEMD_EXEC_PID': '2302', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ANTIGRAVITY_AGENT': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '12133', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'rokey', 'JOURNAL_STREAM': '8:14970', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rokey', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'ANTIGRAVITY_EDITOR_APP_ROOT': '/usr/share/antigravity/resources/app', 'PATH': '/home/rokey/.local/bin:/opt/ros/humble/bin:/home/rokey/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rokey-550XBE-350XBE:@/tmp/.ICE-unix/1869,unix/rokey-550XBE-350XBE:/tmp/.ICE-unix/1869', 'INVOCATION_ID': '76ce5002161a4c63bf60137db90143cd', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':0', 'LANG': 'ko_KR.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ZGJCR3', 'LS_COLORS': '', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'ANTIGRAVITY_TRAJECTORY_ID': '9bb0c435-71ca-459a-aa05-0f85abe45048', 'PWD': '/home/rokey/cobot3_ws/build/simple_sanding', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/rokey/.config/Antigravity/CachedData/15487b3041e65228cae24980a3f796c905ef582c', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rokey/cobot3_ws/build/simple_sanding/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/rokey/ros2_ws/install/dsr_common2/lib/dsr_common2/imp', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'OGRE_RTT_MODE': 'Copy', 'GIO_USE_VFS': 'local', 'COLCON': '1', 'VSCODE_PID': '12133'}, 'shell': False}
+[0.904738] (-) TimerEvent: {}
+[1.004986] (-) TimerEvent: {}
+[1.105319] (-) TimerEvent: {}
+[1.164579] (simple_sanding) StdoutLine: {'line': b'running egg_info\n'}
+[1.166030] (simple_sanding) StdoutLine: {'line': b'writing ../../build/simple_sanding/simple_sanding.egg-info/PKG-INFO\n'}
+[1.166513] (simple_sanding) StdoutLine: {'line': b'writing dependency_links to ../../build/simple_sanding/simple_sanding.egg-info/dependency_links.txt\n'}
+[1.166796] (simple_sanding) StdoutLine: {'line': b'writing entry points to ../../build/simple_sanding/simple_sanding.egg-info/entry_points.txt\n'}
+[1.166957] (simple_sanding) StdoutLine: {'line': b'writing requirements to ../../build/simple_sanding/simple_sanding.egg-info/requires.txt\n'}
+[1.167119] (simple_sanding) StdoutLine: {'line': b'writing top-level names to ../../build/simple_sanding/simple_sanding.egg-info/top_level.txt\n'}
+[1.169782] (simple_sanding) StdoutLine: {'line': b"reading manifest file '../../build/simple_sanding/simple_sanding.egg-info/SOURCES.txt'\n"}
+[1.170906] (simple_sanding) StdoutLine: {'line': b"writing manifest file '../../build/simple_sanding/simple_sanding.egg-info/SOURCES.txt'\n"}
+[1.171111] (simple_sanding) StdoutLine: {'line': b'running build\n'}
+[1.171181] (simple_sanding) StdoutLine: {'line': b'running build_py\n'}
+[1.171415] (simple_sanding) StdoutLine: {'line': b'copying simple_sanding/sanding_config.py -> /home/rokey/cobot3_ws/build/simple_sanding/build/lib/simple_sanding\n'}
+[1.172075] (simple_sanding) StdoutLine: {'line': b'running install\n'}
+[1.172645] (simple_sanding) StdoutLine: {'line': b'running install_lib\n'}
+[1.173685] (simple_sanding) StdoutLine: {'line': b'copying /home/rokey/cobot3_ws/build/simple_sanding/build/lib/simple_sanding/sanding_config.py -> /home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding\n'}
+[1.174462] (simple_sanding) StdoutLine: {'line': b'byte-compiling /home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding/sanding_config.py to sanding_config.cpython-310.pyc\n'}
+[1.175191] (simple_sanding) StdoutLine: {'line': b'running install_data\n'}
+[1.175343] (simple_sanding) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.177510] (simple_sanding) StdoutLine: {'line': b"removing '/home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.177841] (simple_sanding) StdoutLine: {'line': b'Copying ../../build/simple_sanding/simple_sanding.egg-info to /home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding-0.0.0-py3.10.egg-info\n'}
+[1.178732] (simple_sanding) StdoutLine: {'line': b'running install_scripts\n'}
+[1.201522] (simple_sanding) StdoutLine: {'line': b'Installing run_sanding script to /home/rokey/cobot3_ws/install/simple_sanding/lib/simple_sanding\n'}
+[1.201757] (simple_sanding) StdoutLine: {'line': b'Installing test_path script to /home/rokey/cobot3_ws/install/simple_sanding/lib/simple_sanding\n'}
+[1.202168] (simple_sanding) StdoutLine: {'line': b"writing list of installed files to '/home/rokey/cobot3_ws/build/simple_sanding/install.log'\n"}
+[1.205413] (-) TimerEvent: {}
+[1.230370] (simple_sanding) CommandEnded: {'returncode': 0}
+[1.244106] (simple_sanding) JobEnded: {'identifier': 'simple_sanding', 'rc': 0}
+[1.244828] (-) EventReactorShutdown: {}

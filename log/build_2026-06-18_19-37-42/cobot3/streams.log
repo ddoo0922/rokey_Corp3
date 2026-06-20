@@ -1,0 +1,19 @@
+[0.731s] Invoking command in '/home/rokey/cobot3_ws/build/cobot3': PYTHONPATH=/home/rokey/cobot3_ws/build/cobot3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rokey/cobot3_ws/build/cobot3/build --no-deps symlink_data
+[1.052s] running develop
+[1.275s] running egg_info
+[1.275s] writing cobot3.egg-info/PKG-INFO
+[1.276s] writing dependency_links to cobot3.egg-info/dependency_links.txt
+[1.276s] writing entry points to cobot3.egg-info/entry_points.txt
+[1.276s] writing requirements to cobot3.egg-info/requires.txt
+[1.276s] writing top-level names to cobot3.egg-info/top_level.txt
+[1.279s] reading manifest file 'cobot3.egg-info/SOURCES.txt'
+[1.279s] writing manifest file 'cobot3.egg-info/SOURCES.txt'
+[1.281s] running build_ext
+[1.281s] Creating /home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages/cobot3.egg-link (link to .)
+[1.282s] Installing m0609_color_detector script to /home/rokey/cobot3_ws/install/cobot3/lib/cobot3
+[1.282s] Installing my_listener script to /home/rokey/cobot3_ws/install/cobot3/lib/cobot3
+[1.283s] Installing my_talker script to /home/rokey/cobot3_ws/install/cobot3/lib/cobot3
+[1.283s] 
+[1.283s] Installed /home/rokey/cobot3_ws/build/cobot3
+[1.283s] running symlink_data
+[1.318s] Invoked command in '/home/rokey/cobot3_ws/build/cobot3' returned '0': PYTHONPATH=/home/rokey/cobot3_ws/build/cobot3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/cobot3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rokey/cobot3_ws/build/cobot3/build --no-deps symlink_data
