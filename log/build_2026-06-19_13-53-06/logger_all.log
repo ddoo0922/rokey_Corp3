@@ -1,0 +1,1044 @@
+[0.079s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'commander']
+[0.079s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=24, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['commander'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7cec4bc88460>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7cec4bc57dc0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7cec4bc57dc0>>)
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.148s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rokey/cobot3_ws'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/EE_assemble) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extensions ['cmake', 'python']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extension 'cmake'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extension 'python'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extensions ['python_setup_py']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey) by extension 'python_setup_py'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extension 'ros'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extensions ['cmake', 'python']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extension 'cmake'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extension 'python'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extensions ['python_setup_py']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws) by extension 'python_setup_py'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extension 'ros'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extensions ['cmake', 'python']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extension 'cmake'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extension 'python'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extensions ['python_setup_py']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt) by extension 'python_setup_py'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extensions ['ros']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extension 'ros'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extensions ['cmake', 'python']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extension 'cmake'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extension 'python'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extensions ['python_setup_py']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609) by extension 'python_setup_py'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extension 'ignore_ament_install'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extensions ['colcon_pkg']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extension 'colcon_pkg'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extensions ['colcon_meta']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extension 'colcon_meta'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/home/rokey/cobot3_ws/isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/Collected_m0609_camera_backup/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/materials) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/SubUSDs/textures) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_camera/omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Props/Blocks/Materials/Textures) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/Collected_m0609_gripper/SubUSDs) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/m0609_isaac_sim/configuration) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/collision) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/gripper/robotiq/85_2f/visual) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_blue) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_collision) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/urdf/meshes/m0609_white) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/doosan-robot2/usd) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/m0609_isaac_sim/configuration) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/collision) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/meshes/visual) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/onrobot_rg2/urdf/onrobot_rg2/configuration) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/M0609/rmpflow/__pycache__) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(isaacpjt/nova-carter) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/M0609) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/M0609) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/M0609) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/M0609) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/M0609) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/M0609) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/M0609) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/M0609) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/M0609) by extension 'ros'
+[0.175s] DEBUG:colcon.colcon_core.package_identification:Package 'src/M0609' with type 'ros.ament_python' and name 'M0609'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/cobot3) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/cobot3) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/cobot3) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/cobot3) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/cobot3) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/cobot3) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/cobot3) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/cobot3) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/cobot3) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cobot3' with type 'ros.ament_python' and name 'cobot3'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extension 'ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extensions ['cmake', 'python']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extension 'cmake'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extension 'python'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extensions ['python_setup_py']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter) by extension 'python_setup_py'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter/commander) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter/commander) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter/commander) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter/commander) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter/commander) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter/commander) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter/commander) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter/commander) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/nova_carter/commander) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nova_carter/commander' with type 'ros.ament_python' and name 'commander'
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.187s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'M0609' in 'src/M0609'
+[0.187s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'cobot3' in 'src/cobot3'
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.188s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[0.189s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'commander' build argument 'cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'commander' build argument 'cmake_target' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'commander' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'commander' build argument 'cmake_clean_cache' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'commander' build argument 'cmake_clean_first' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'commander' build argument 'cmake_force_configure' from command line to 'False'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'commander' build argument 'ament_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'commander' build argument 'catkin_cmake_args' from command line to 'None'
+[0.202s] Level 5:colcon.colcon_core.verb:set package 'commander' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.202s] DEBUG:colcon.colcon_core.verb:Building package 'commander' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rokey/cobot3_ws/build/commander', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rokey/cobot3_ws/install/commander', 'merge_install': False, 'path': '/home/rokey/cobot3_ws/src/nova_carter/commander', 'symlink_install': False, 'test_result_base': None}
+[0.202s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.203s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.203s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rokey/cobot3_ws/src/nova_carter/commander' with build type 'ament_python'
+[0.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('commander', 'ament_prefix_path')
+[0.205s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rokey/cobot3_ws/install/commander/share/commander/hook/ament_prefix_path.ps1'
+[0.206s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rokey/cobot3_ws/install/commander/share/commander/hook/ament_prefix_path.dsv'
+[0.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rokey/cobot3_ws/install/commander/share/commander/hook/ament_prefix_path.sh'
+[0.207s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.207s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.313s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rokey/cobot3_ws/src/nova_carter/commander'
+[0.313s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.313s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rokey/cobot3_ws/src/nova_carter/commander': PYTHONPATH=/home/rokey/cobot3_ws/build/commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/commander build --build-base /home/rokey/cobot3_ws/build/commander/build install --record /home/rokey/cobot3_ws/build/commander/install.log --single-version-externally-managed install_data
+[0.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rokey/cobot3_ws/src/nova_carter/commander' returned '0': PYTHONPATH=/home/rokey/cobot3_ws/build/commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/commander build --build-base /home/rokey/cobot3_ws/build/commander/build install --record /home/rokey/cobot3_ws/build/commander/install.log --single-version-externally-managed install_data
+[0.573s] Level 1:colcon.colcon_core.environment:checking '/home/rokey/cobot3_ws/install/commander' for CMake module files
+[0.573s] Level 1:colcon.colcon_core.environment:checking '/home/rokey/cobot3_ws/install/commander' for CMake config files
+[0.573s] Level 1:colcon.colcon_core.environment:checking '/home/rokey/cobot3_ws/install/commander/lib'
+[0.573s] Level 1:colcon.colcon_core.environment:checking '/home/rokey/cobot3_ws/install/commander/bin'
+[0.573s] Level 1:colcon.colcon_core.environment:checking '/home/rokey/cobot3_ws/install/commander/lib/pkgconfig/commander.pc'
+[0.574s] Level 1:colcon.colcon_core.environment:checking '/home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages'
+[0.574s] Level 1:colcon.colcon_core.shell:create_environment_hook('commander', 'pythonpath')
+[0.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rokey/cobot3_ws/install/commander/share/commander/hook/pythonpath.ps1'
+[0.574s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rokey/cobot3_ws/install/commander/share/commander/hook/pythonpath.dsv'
+[0.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rokey/cobot3_ws/install/commander/share/commander/hook/pythonpath.sh'
+[0.574s] Level 1:colcon.colcon_core.environment:checking '/home/rokey/cobot3_ws/install/commander/bin'
+[0.574s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(commander)
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/rokey/cobot3_ws/install/commander/share/commander/package.ps1'
+[0.575s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rokey/cobot3_ws/install/commander/share/commander/package.dsv'
+[0.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/rokey/cobot3_ws/install/commander/share/commander/package.sh'
+[0.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/rokey/cobot3_ws/install/commander/share/commander/package.bash'
+[0.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/rokey/cobot3_ws/install/commander/share/commander/package.zsh'
+[0.576s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rokey/cobot3_ws/install/commander/share/colcon-core/packages/commander)
+[0.576s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.576s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.576s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.576s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.579s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.579s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.579s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.585s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.585s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rokey/cobot3_ws/install/local_setup.ps1'
+[0.586s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rokey/cobot3_ws/install/_local_setup_util_ps1.py'
+[0.586s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rokey/cobot3_ws/install/setup.ps1'
+[0.587s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rokey/cobot3_ws/install/local_setup.sh'
+[0.587s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rokey/cobot3_ws/install/_local_setup_util_sh.py'
+[0.587s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rokey/cobot3_ws/install/setup.sh'
+[0.588s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rokey/cobot3_ws/install/local_setup.bash'
+[0.588s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rokey/cobot3_ws/install/setup.bash'
+[0.588s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rokey/cobot3_ws/install/local_setup.zsh'
+[0.589s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rokey/cobot3_ws/install/setup.zsh'

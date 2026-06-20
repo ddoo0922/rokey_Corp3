@@ -1,0 +1,37 @@
+[0.272s] Invoking command in '/home/rokey/cobot3_ws/src/sanding_control': PYTHONPATH=/home/rokey/cobot3_ws/build/sanding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/sanding_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sanding_control build --build-base /home/rokey/cobot3_ws/build/sanding_control/build install --record /home/rokey/cobot3_ws/build/sanding_control/install.log --single-version-externally-managed install_data
+[0.373s] running egg_info
+[0.373s] creating ../../build/sanding_control/sanding_control.egg-info
+[0.373s] writing ../../build/sanding_control/sanding_control.egg-info/PKG-INFO
+[0.373s] writing dependency_links to ../../build/sanding_control/sanding_control.egg-info/dependency_links.txt
+[0.373s] writing entry points to ../../build/sanding_control/sanding_control.egg-info/entry_points.txt
+[0.373s] writing requirements to ../../build/sanding_control/sanding_control.egg-info/requires.txt
+[0.373s] writing top-level names to ../../build/sanding_control/sanding_control.egg-info/top_level.txt
+[0.373s] writing manifest file '../../build/sanding_control/sanding_control.egg-info/SOURCES.txt'
+[0.374s] reading manifest file '../../build/sanding_control/sanding_control.egg-info/SOURCES.txt'
+[0.374s] writing manifest file '../../build/sanding_control/sanding_control.egg-info/SOURCES.txt'
+[0.374s] running build
+[0.374s] running build_py
+[0.374s] creating /home/rokey/cobot3_ws/build/sanding_control/build
+[0.374s] creating /home/rokey/cobot3_ws/build/sanding_control/build/lib
+[0.374s] creating /home/rokey/cobot3_ws/build/sanding_control/build/lib/sanding_control
+[0.374s] copying sanding_control/__init__.py -> /home/rokey/cobot3_ws/build/sanding_control/build/lib/sanding_control
+[0.374s] copying sanding_control/simple_sanding_planner.py -> /home/rokey/cobot3_ws/build/sanding_control/build/lib/sanding_control
+[0.375s] running install
+[0.375s] running install_lib
+[0.375s] creating /home/rokey/cobot3_ws/install/sanding_control/lib/python3.10/site-packages/sanding_control
+[0.375s] copying /home/rokey/cobot3_ws/build/sanding_control/build/lib/sanding_control/__init__.py -> /home/rokey/cobot3_ws/install/sanding_control/lib/python3.10/site-packages/sanding_control
+[0.375s] copying /home/rokey/cobot3_ws/build/sanding_control/build/lib/sanding_control/simple_sanding_planner.py -> /home/rokey/cobot3_ws/install/sanding_control/lib/python3.10/site-packages/sanding_control
+[0.375s] byte-compiling /home/rokey/cobot3_ws/install/sanding_control/lib/python3.10/site-packages/sanding_control/__init__.py to __init__.cpython-310.pyc
+[0.375s] byte-compiling /home/rokey/cobot3_ws/install/sanding_control/lib/python3.10/site-packages/sanding_control/simple_sanding_planner.py to simple_sanding_planner.cpython-310.pyc
+[0.376s] running install_data
+[0.376s] creating /home/rokey/cobot3_ws/install/sanding_control/share/ament_index
+[0.376s] creating /home/rokey/cobot3_ws/install/sanding_control/share/ament_index/resource_index
+[0.376s] creating /home/rokey/cobot3_ws/install/sanding_control/share/ament_index/resource_index/packages
+[0.376s] copying resource/sanding_control -> /home/rokey/cobot3_ws/install/sanding_control/share/ament_index/resource_index/packages
+[0.376s] copying package.xml -> /home/rokey/cobot3_ws/install/sanding_control/share/sanding_control
+[0.376s] running install_egg_info
+[0.377s] Copying ../../build/sanding_control/sanding_control.egg-info to /home/rokey/cobot3_ws/install/sanding_control/lib/python3.10/site-packages/sanding_control-0.0.0-py3.10.egg-info
+[0.377s] running install_scripts
+[0.386s] Installing simple_sanding_planner script to /home/rokey/cobot3_ws/install/sanding_control/lib/sanding_control
+[0.386s] writing list of installed files to '/home/rokey/cobot3_ws/build/sanding_control/install.log'
+[0.401s] Invoked command in '/home/rokey/cobot3_ws/src/sanding_control' returned '0': PYTHONPATH=/home/rokey/cobot3_ws/build/sanding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/sanding_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sanding_control build --build-base /home/rokey/cobot3_ws/build/sanding_control/build install --record /home/rokey/cobot3_ws/build/sanding_control/install.log --single-version-externally-managed install_data

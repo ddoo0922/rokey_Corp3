@@ -1,0 +1,34 @@
+[0.255s] Invoking command in '/home/rokey/cobot3_ws/src/nova_carter/commander': PYTHONPATH=/home/rokey/cobot3_ws/build/commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/commander build --build-base /home/rokey/cobot3_ws/build/commander/build install --record /home/rokey/cobot3_ws/build/commander/install.log --single-version-externally-managed install_data
+[0.344s] running egg_info
+[0.344s] creating ../../../build/commander/commander.egg-info
+[0.344s] writing ../../../build/commander/commander.egg-info/PKG-INFO
+[0.344s] writing dependency_links to ../../../build/commander/commander.egg-info/dependency_links.txt
+[0.344s] writing entry points to ../../../build/commander/commander.egg-info/entry_points.txt
+[0.344s] writing requirements to ../../../build/commander/commander.egg-info/requires.txt
+[0.344s] writing top-level names to ../../../build/commander/commander.egg-info/top_level.txt
+[0.344s] writing manifest file '../../../build/commander/commander.egg-info/SOURCES.txt'
+[0.345s] reading manifest file '../../../build/commander/commander.egg-info/SOURCES.txt'
+[0.345s] adding license file 'LICENSE'
+[0.345s] writing manifest file '../../../build/commander/commander.egg-info/SOURCES.txt'
+[0.345s] running build
+[0.345s] running build_py
+[0.345s] creating /home/rokey/cobot3_ws/build/commander/build
+[0.345s] creating /home/rokey/cobot3_ws/build/commander/build/lib
+[0.345s] creating /home/rokey/cobot3_ws/build/commander/build/lib/commander
+[0.345s] copying commander/__init__.py -> /home/rokey/cobot3_ws/build/commander/build/lib/commander
+[0.345s] running install
+[0.345s] running install_lib
+[0.345s] creating /home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages/commander
+[0.345s] copying /home/rokey/cobot3_ws/build/commander/build/lib/commander/__init__.py -> /home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages/commander
+[0.345s] byte-compiling /home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages/commander/__init__.py to __init__.cpython-310.pyc
+[0.345s] running install_data
+[0.346s] creating /home/rokey/cobot3_ws/install/commander/share/ament_index
+[0.346s] creating /home/rokey/cobot3_ws/install/commander/share/ament_index/resource_index
+[0.346s] creating /home/rokey/cobot3_ws/install/commander/share/ament_index/resource_index/packages
+[0.346s] copying resource/commander -> /home/rokey/cobot3_ws/install/commander/share/ament_index/resource_index/packages
+[0.346s] copying package.xml -> /home/rokey/cobot3_ws/install/commander/share/commander
+[0.346s] running install_egg_info
+[0.347s] Copying ../../../build/commander/commander.egg-info to /home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages/commander-0.0.0-py3.10.egg-info
+[0.347s] running install_scripts
+[0.356s] writing list of installed files to '/home/rokey/cobot3_ws/build/commander/install.log'
+[0.366s] Invoked command in '/home/rokey/cobot3_ws/src/nova_carter/commander' returned '0': PYTHONPATH=/home/rokey/cobot3_ws/build/commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/commander build --build-base /home/rokey/cobot3_ws/build/commander/build install --record /home/rokey/cobot3_ws/build/commander/install.log --single-version-externally-managed install_data

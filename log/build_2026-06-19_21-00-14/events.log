@@ -1,0 +1,48 @@
+[0.000000] (-) TimerEvent: {}
+[0.000346] (-) JobUnselected: {'identifier': 'M0609'}
+[0.000361] (-) JobUnselected: {'identifier': 'cobot3'}
+[0.000368] (-) JobUnselected: {'identifier': 'commander'}
+[0.000376] (simple_sanding) JobQueued: {'identifier': 'simple_sanding', 'dependencies': OrderedDict()}
+[0.000384] (simple_sanding) JobStarted: {'identifier': 'simple_sanding'}
+[0.099839] (-) TimerEvent: {}
+[0.200041] (-) TimerEvent: {}
+[0.238435] (simple_sanding) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/simple_sanding', 'build', '--build-base', '/home/rokey/cobot3_ws/build/simple_sanding/build', 'install', '--record', '/home/rokey/cobot3_ws/build/simple_sanding/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/rokey/cobot3_ws/src/simple_sanding', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LANGUAGE': 'ko:en', 'USER': 'rokey', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/rokey', 'OLDPWD': '/home/rokey', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1908', 'SYSTEMD_EXEC_PID': '2318', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '12745', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'rokey', 'JOURNAL_STREAM': '8:18631', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rokey', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/rokey/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/IsaacSim13:@/tmp/.ICE-unix/2290,unix/IsaacSim13:/tmp/.ICE-unix/2290', 'INVOCATION_ID': 'cbf463c47a0e40f2b6ccdf26988dbe3e', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'ko_KR.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:1042cb8a-45f4-4084-8ed4-bc3304200ea2', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rokey/cobot3_ws/build/simple_sanding', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rokey/cobot3_ws/build/simple_sanding/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.300278] (-) TimerEvent: {}
+[0.330285] (simple_sanding) StdoutLine: {'line': b'running egg_info\n'}
+[0.330411] (simple_sanding) StdoutLine: {'line': b'creating ../../build/simple_sanding/simple_sanding.egg-info\n'}
+[0.330444] (simple_sanding) StdoutLine: {'line': b'writing ../../build/simple_sanding/simple_sanding.egg-info/PKG-INFO\n'}
+[0.330467] (simple_sanding) StdoutLine: {'line': b'writing dependency_links to ../../build/simple_sanding/simple_sanding.egg-info/dependency_links.txt\n'}
+[0.330488] (simple_sanding) StdoutLine: {'line': b'writing entry points to ../../build/simple_sanding/simple_sanding.egg-info/entry_points.txt\n'}
+[0.330506] (simple_sanding) StdoutLine: {'line': b'writing requirements to ../../build/simple_sanding/simple_sanding.egg-info/requires.txt\n'}
+[0.330742] (simple_sanding) StdoutLine: {'line': b'writing top-level names to ../../build/simple_sanding/simple_sanding.egg-info/top_level.txt\n'}
+[0.330765] (simple_sanding) StdoutLine: {'line': b"writing manifest file '../../build/simple_sanding/simple_sanding.egg-info/SOURCES.txt'\n"}
+[0.330818] (simple_sanding) StdoutLine: {'line': b"reading manifest file '../../build/simple_sanding/simple_sanding.egg-info/SOURCES.txt'\n"}
+[0.331727] (simple_sanding) StdoutLine: {'line': b"writing manifest file '../../build/simple_sanding/simple_sanding.egg-info/SOURCES.txt'\n"}
+[0.331754] (simple_sanding) StdoutLine: {'line': b'running build\n'}
+[0.331800] (simple_sanding) StdoutLine: {'line': b'running build_py\n'}
+[0.331818] (simple_sanding) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/build/simple_sanding/build\n'}
+[0.331837] (simple_sanding) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/build/simple_sanding/build/lib\n'}
+[0.331854] (simple_sanding) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/build/simple_sanding/build/lib/simple_sanding\n'}
+[0.331872] (simple_sanding) StdoutLine: {'line': b'copying simple_sanding/__init__.py -> /home/rokey/cobot3_ws/build/simple_sanding/build/lib/simple_sanding\n'}
+[0.331890] (simple_sanding) StdoutLine: {'line': b'copying simple_sanding/sanding_node.py -> /home/rokey/cobot3_ws/build/simple_sanding/build/lib/simple_sanding\n'}
+[0.331907] (simple_sanding) StdoutLine: {'line': b'running install\n'}
+[0.331924] (simple_sanding) StdoutLine: {'line': b'running install_lib\n'}
+[0.332540] (simple_sanding) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding\n'}
+[0.332563] (simple_sanding) StdoutLine: {'line': b'copying /home/rokey/cobot3_ws/build/simple_sanding/build/lib/simple_sanding/__init__.py -> /home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding\n'}
+[0.332581] (simple_sanding) StdoutLine: {'line': b'copying /home/rokey/cobot3_ws/build/simple_sanding/build/lib/simple_sanding/sanding_node.py -> /home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding\n'}
+[0.332599] (simple_sanding) StdoutLine: {'line': b'byte-compiling /home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding/__init__.py to __init__.cpython-310.pyc\n'}
+[0.332616] (simple_sanding) StdoutLine: {'line': b'byte-compiling /home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding/sanding_node.py to sanding_node.cpython-310.pyc\n'}
+[0.332633] (simple_sanding) StdoutLine: {'line': b'running install_data\n'}
+[0.332650] (simple_sanding) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/install/simple_sanding/share/ament_index\n'}
+[0.332668] (simple_sanding) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/install/simple_sanding/share/ament_index/resource_index\n'}
+[0.332685] (simple_sanding) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/install/simple_sanding/share/ament_index/resource_index/packages\n'}
+[0.332702] (simple_sanding) StdoutLine: {'line': b'copying resource/simple_sanding -> /home/rokey/cobot3_ws/install/simple_sanding/share/ament_index/resource_index/packages\n'}
+[0.332719] (simple_sanding) StdoutLine: {'line': b'copying package.xml -> /home/rokey/cobot3_ws/install/simple_sanding/share/simple_sanding\n'}
+[0.332735] (simple_sanding) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.333824] (simple_sanding) StdoutLine: {'line': b'Copying ../../build/simple_sanding/simple_sanding.egg-info to /home/rokey/cobot3_ws/install/simple_sanding/lib/python3.10/site-packages/simple_sanding-0.0.0-py3.10.egg-info\n'}
+[0.334046] (simple_sanding) StdoutLine: {'line': b'running install_scripts\n'}
+[0.343084] (simple_sanding) StdoutLine: {'line': b'Installing run_sanding script to /home/rokey/cobot3_ws/install/simple_sanding/lib/simple_sanding\n'}
+[0.343802] (simple_sanding) StdoutLine: {'line': b"writing list of installed files to '/home/rokey/cobot3_ws/build/simple_sanding/install.log'\n"}
+[0.353947] (simple_sanding) CommandEnded: {'returncode': 0}
+[0.359997] (simple_sanding) JobEnded: {'identifier': 'simple_sanding', 'rc': 0}
+[0.360321] (-) EventReactorShutdown: {}

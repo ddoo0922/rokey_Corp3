@@ -1,0 +1,44 @@
+[0.000000] (-) TimerEvent: {}
+[0.000183] (-) JobUnselected: {'identifier': 'M0609'}
+[0.000244] (-) JobUnselected: {'identifier': 'cobot3'}
+[0.000271] (commander) JobQueued: {'identifier': 'commander', 'dependencies': OrderedDict()}
+[0.000283] (commander) JobStarted: {'identifier': 'commander'}
+[0.099579] (-) TimerEvent: {}
+[0.199831] (-) TimerEvent: {}
+[0.254832] (commander) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/commander', 'build', '--build-base', '/home/rokey/cobot3_ws/build/commander/build', 'install', '--record', '/home/rokey/cobot3_ws/build/commander/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/rokey/cobot3_ws/src/nova_carter/commander', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LANGUAGE': 'ko:en', 'USER': 'rokey', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/rokey', 'OLDPWD': '/home/rokey/cobot3_ws/src/nova_carter', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1921', 'SYSTEMD_EXEC_PID': '2323', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '22460', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'rokey', 'JOURNAL_STREAM': '8:13586', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rokey', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/rokey/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/IsaacSim13:@/tmp/.ICE-unix/2303,unix/IsaacSim13:/tmp/.ICE-unix/2303', 'INVOCATION_ID': '11f5cfa74f284ab49d5d3f7d551e451b', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'ko_KR.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:9ec2b441-0351-4837-a468-a805f28cf3f1', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rokey/cobot3_ws/build/commander', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rokey/cobot3_ws/build/commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.300005] (-) TimerEvent: {}
+[0.343549] (commander) StdoutLine: {'line': b'running egg_info\n'}
+[0.344065] (commander) StdoutLine: {'line': b'creating ../../../build/commander/commander.egg-info\n'}
+[0.344123] (commander) StdoutLine: {'line': b'writing ../../../build/commander/commander.egg-info/PKG-INFO\n'}
+[0.344177] (commander) StdoutLine: {'line': b'writing dependency_links to ../../../build/commander/commander.egg-info/dependency_links.txt\n'}
+[0.344225] (commander) StdoutLine: {'line': b'writing entry points to ../../../build/commander/commander.egg-info/entry_points.txt\n'}
+[0.344271] (commander) StdoutLine: {'line': b'writing requirements to ../../../build/commander/commander.egg-info/requires.txt\n'}
+[0.344318] (commander) StdoutLine: {'line': b'writing top-level names to ../../../build/commander/commander.egg-info/top_level.txt\n'}
+[0.344365] (commander) StdoutLine: {'line': b"writing manifest file '../../../build/commander/commander.egg-info/SOURCES.txt'\n"}
+[0.344829] (commander) StdoutLine: {'line': b"reading manifest file '../../../build/commander/commander.egg-info/SOURCES.txt'\n"}
+[0.344993] (commander) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.345057] (commander) StdoutLine: {'line': b"writing manifest file '../../../build/commander/commander.egg-info/SOURCES.txt'\n"}
+[0.345106] (commander) StdoutLine: {'line': b'running build\n'}
+[0.345158] (commander) StdoutLine: {'line': b'running build_py\n'}
+[0.345204] (commander) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/build/commander/build\n'}
+[0.345251] (commander) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/build/commander/build/lib\n'}
+[0.345297] (commander) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/build/commander/build/lib/commander\n'}
+[0.345341] (commander) StdoutLine: {'line': b'copying commander/__init__.py -> /home/rokey/cobot3_ws/build/commander/build/lib/commander\n'}
+[0.345381] (commander) StdoutLine: {'line': b'running install\n'}
+[0.345399] (commander) StdoutLine: {'line': b'running install_lib\n'}
+[0.345457] (commander) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages/commander\n'}
+[0.345514] (commander) StdoutLine: {'line': b'copying /home/rokey/cobot3_ws/build/commander/build/lib/commander/__init__.py -> /home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages/commander\n'}
+[0.345649] (commander) StdoutLine: {'line': b'byte-compiling /home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages/commander/__init__.py to __init__.cpython-310.pyc\n'}
+[0.345719] (commander) StdoutLine: {'line': b'running install_data\n'}
+[0.345787] (commander) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/install/commander/share/ament_index\n'}
+[0.345807] (commander) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/install/commander/share/ament_index/resource_index\n'}
+[0.345878] (commander) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/install/commander/share/ament_index/resource_index/packages\n'}
+[0.345927] (commander) StdoutLine: {'line': b'copying resource/commander -> /home/rokey/cobot3_ws/install/commander/share/ament_index/resource_index/packages\n'}
+[0.345973] (commander) StdoutLine: {'line': b'copying package.xml -> /home/rokey/cobot3_ws/install/commander/share/commander\n'}
+[0.346012] (commander) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.346869] (commander) StdoutLine: {'line': b'Copying ../../../build/commander/commander.egg-info to /home/rokey/cobot3_ws/install/commander/lib/python3.10/site-packages/commander-0.0.0-py3.10.egg-info\n'}
+[0.347106] (commander) StdoutLine: {'line': b'running install_scripts\n'}
+[0.356103] (commander) StdoutLine: {'line': b"writing list of installed files to '/home/rokey/cobot3_ws/build/commander/install.log'\n"}
+[0.366479] (commander) CommandEnded: {'returncode': 0}
+[0.373223] (commander) JobEnded: {'identifier': 'commander', 'rc': 0}
+[0.373338] (-) EventReactorShutdown: {}

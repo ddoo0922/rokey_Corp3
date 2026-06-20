@@ -1,0 +1,42 @@
+[0.000000] (-) TimerEvent: {}
+[0.000448] (M0609) JobQueued: {'identifier': 'M0609', 'dependencies': OrderedDict()}
+[0.000476] (M0609) JobStarted: {'identifier': 'M0609'}
+[0.100097] (-) TimerEvent: {}
+[0.200370] (-) TimerEvent: {}
+[0.247571] (M0609) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/M0609', 'build', '--build-base', '/home/rokey/cobot3_ws/build/M0609/build', 'install', '--record', '/home/rokey/cobot3_ws/build/M0609/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/rokey/cobot3_ws/src/M0609', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LANGUAGE': 'ko:en', 'USER': 'rokey', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/rokey', 'OLDPWD': '/home/rokey/cobot3_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1927', 'SYSTEMD_EXEC_PID': '2399', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '43470', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'rokey', 'JOURNAL_STREAM': '8:26567', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rokey', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/IsaacSim13:@/tmp/.ICE-unix/2373,unix/IsaacSim13:/tmp/.ICE-unix/2373', 'INVOCATION_ID': '7ba170847ddd48e9b2669ee13a9e8319', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'ko_KR.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:d669eb01-b7b9-416e-b799-b9fe72aed6f7', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rokey/cobot3_ws/build/M0609', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rokey/cobot3_ws/build/M0609/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/M0609/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.300520] (-) TimerEvent: {}
+[0.347362] (M0609) StdoutLine: {'line': b'running egg_info\n'}
+[0.347522] (M0609) StdoutLine: {'line': b'creating ../../build/M0609/M0609.egg-info\n'}
+[0.347551] (M0609) StdoutLine: {'line': b'writing ../../build/M0609/M0609.egg-info/PKG-INFO\n'}
+[0.347844] (M0609) StdoutLine: {'line': b'writing dependency_links to ../../build/M0609/M0609.egg-info/dependency_links.txt\n'}
+[0.347904] (M0609) StdoutLine: {'line': b'writing entry points to ../../build/M0609/M0609.egg-info/entry_points.txt\n'}
+[0.347936] (M0609) StdoutLine: {'line': b'writing requirements to ../../build/M0609/M0609.egg-info/requires.txt\n'}
+[0.347957] (M0609) StdoutLine: {'line': b'writing top-level names to ../../build/M0609/M0609.egg-info/top_level.txt\n'}
+[0.347976] (M0609) StdoutLine: {'line': b"writing manifest file '../../build/M0609/M0609.egg-info/SOURCES.txt'\n"}
+[0.348514] (M0609) StdoutLine: {'line': b"reading manifest file '../../build/M0609/M0609.egg-info/SOURCES.txt'\n"}
+[0.348570] (M0609) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.349068] (M0609) StdoutLine: {'line': b"writing manifest file '../../build/M0609/M0609.egg-info/SOURCES.txt'\n"}
+[0.349128] (M0609) StdoutLine: {'line': b'running build\n'}
+[0.349154] (M0609) StdoutLine: {'line': b'running build_py\n'}
+[0.349172] (M0609) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/build/M0609/build\n'}
+[0.349189] (M0609) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/build/M0609/build/lib\n'}
+[0.349205] (M0609) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/build/M0609/build/lib/M0609\n'}
+[0.349220] (M0609) StdoutLine: {'line': b'copying M0609/__init__.py -> /home/rokey/cobot3_ws/build/M0609/build/lib/M0609\n'}
+[0.349235] (M0609) StdoutLine: {'line': b'running install\n'}
+[0.349250] (M0609) StdoutLine: {'line': b'running install_lib\n'}
+[0.349918] (M0609) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/install/M0609/lib/python3.10/site-packages/M0609\n'}
+[0.350166] (M0609) StdoutLine: {'line': b'copying /home/rokey/cobot3_ws/build/M0609/build/lib/M0609/__init__.py -> /home/rokey/cobot3_ws/install/M0609/lib/python3.10/site-packages/M0609\n'}
+[0.350275] (M0609) StdoutLine: {'line': b'byte-compiling /home/rokey/cobot3_ws/install/M0609/lib/python3.10/site-packages/M0609/__init__.py to __init__.cpython-310.pyc\n'}
+[0.350301] (M0609) StdoutLine: {'line': b'running install_data\n'}
+[0.350320] (M0609) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/install/M0609/share/ament_index\n'}
+[0.350338] (M0609) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/install/M0609/share/ament_index/resource_index\n'}
+[0.350355] (M0609) StdoutLine: {'line': b'creating /home/rokey/cobot3_ws/install/M0609/share/ament_index/resource_index/packages\n'}
+[0.350370] (M0609) StdoutLine: {'line': b'copying resource/M0609 -> /home/rokey/cobot3_ws/install/M0609/share/ament_index/resource_index/packages\n'}
+[0.350386] (M0609) StdoutLine: {'line': b'copying package.xml -> /home/rokey/cobot3_ws/install/M0609/share/M0609\n'}
+[0.350402] (M0609) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.351229] (M0609) StdoutLine: {'line': b'Copying ../../build/M0609/M0609.egg-info to /home/rokey/cobot3_ws/install/M0609/lib/python3.10/site-packages/M0609-0.0.0-py3.10.egg-info\n'}
+[0.351516] (M0609) StdoutLine: {'line': b'running install_scripts\n'}
+[0.360749] (M0609) StdoutLine: {'line': b"writing list of installed files to '/home/rokey/cobot3_ws/build/M0609/install.log'\n"}
+[0.371208] (M0609) CommandEnded: {'returncode': 0}
+[0.376991] (M0609) JobEnded: {'identifier': 'M0609', 'rc': 0}
+[0.377195] (-) EventReactorShutdown: {}

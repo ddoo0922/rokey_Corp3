@@ -1,0 +1,34 @@
+[0.247s] Invoking command in '/home/rokey/cobot3_ws/src/M0609': PYTHONPATH=/home/rokey/cobot3_ws/build/M0609/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/M0609/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/M0609 build --build-base /home/rokey/cobot3_ws/build/M0609/build install --record /home/rokey/cobot3_ws/build/M0609/install.log --single-version-externally-managed install_data
+[0.347s] running egg_info
+[0.347s] creating ../../build/M0609/M0609.egg-info
+[0.347s] writing ../../build/M0609/M0609.egg-info/PKG-INFO
+[0.347s] writing dependency_links to ../../build/M0609/M0609.egg-info/dependency_links.txt
+[0.347s] writing entry points to ../../build/M0609/M0609.egg-info/entry_points.txt
+[0.347s] writing requirements to ../../build/M0609/M0609.egg-info/requires.txt
+[0.347s] writing top-level names to ../../build/M0609/M0609.egg-info/top_level.txt
+[0.348s] writing manifest file '../../build/M0609/M0609.egg-info/SOURCES.txt'
+[0.348s] reading manifest file '../../build/M0609/M0609.egg-info/SOURCES.txt'
+[0.348s] adding license file 'LICENSE'
+[0.349s] writing manifest file '../../build/M0609/M0609.egg-info/SOURCES.txt'
+[0.349s] running build
+[0.349s] running build_py
+[0.349s] creating /home/rokey/cobot3_ws/build/M0609/build
+[0.349s] creating /home/rokey/cobot3_ws/build/M0609/build/lib
+[0.349s] creating /home/rokey/cobot3_ws/build/M0609/build/lib/M0609
+[0.349s] copying M0609/__init__.py -> /home/rokey/cobot3_ws/build/M0609/build/lib/M0609
+[0.349s] running install
+[0.349s] running install_lib
+[0.350s] creating /home/rokey/cobot3_ws/install/M0609/lib/python3.10/site-packages/M0609
+[0.350s] copying /home/rokey/cobot3_ws/build/M0609/build/lib/M0609/__init__.py -> /home/rokey/cobot3_ws/install/M0609/lib/python3.10/site-packages/M0609
+[0.350s] byte-compiling /home/rokey/cobot3_ws/install/M0609/lib/python3.10/site-packages/M0609/__init__.py to __init__.cpython-310.pyc
+[0.350s] running install_data
+[0.350s] creating /home/rokey/cobot3_ws/install/M0609/share/ament_index
+[0.350s] creating /home/rokey/cobot3_ws/install/M0609/share/ament_index/resource_index
+[0.350s] creating /home/rokey/cobot3_ws/install/M0609/share/ament_index/resource_index/packages
+[0.350s] copying resource/M0609 -> /home/rokey/cobot3_ws/install/M0609/share/ament_index/resource_index/packages
+[0.350s] copying package.xml -> /home/rokey/cobot3_ws/install/M0609/share/M0609
+[0.350s] running install_egg_info
+[0.351s] Copying ../../build/M0609/M0609.egg-info to /home/rokey/cobot3_ws/install/M0609/lib/python3.10/site-packages/M0609-0.0.0-py3.10.egg-info
+[0.351s] running install_scripts
+[0.360s] writing list of installed files to '/home/rokey/cobot3_ws/build/M0609/install.log'
+[0.371s] Invoked command in '/home/rokey/cobot3_ws/src/M0609' returned '0': PYTHONPATH=/home/rokey/cobot3_ws/build/M0609/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rokey/cobot3_ws/install/M0609/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/M0609 build --build-base /home/rokey/cobot3_ws/build/M0609/build install --record /home/rokey/cobot3_ws/build/M0609/install.log --single-version-externally-managed install_data
