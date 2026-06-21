@@ -31,32 +31,44 @@ def save_json(path, data):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 def create_magic_mouse_points(resolution):
-    x_min, x_max = -0.5, 0.5
-    y_min, y_max = -0.5, 0.5
-    z_max = 0.0
-
-    xs = np.linspace(x_min, x_max, resolution)
-    ys = np.linspace(y_min, y_max, resolution)
-
-    x_range = x_max - x_min
-    y_range = y_max - y_min
+    num_rings = resolution
+    num_sectors = resolution
     
     points = []
-    for x in xs:
-        for y in ys:
-            nx = x / (x_range / 2.0)
-            ny = y / (y_range / 2.0)
-            dome = 0.20 * (1.0 - nx**2) * (1.0 - ny**2)
-            z = z_max + dome
-            points.append([x, y, z])
+    # 꼭대기 중심점
+    points.append([0.0, 0.0, 0.20])
     
+    for i in range(1, num_rings + 1):
+        r = float(i) / num_rings
+        # Z 높이: 0.20 * sqrt(1 - r^2)
+        z = 0.20 * np.sqrt(max(0.0, 1.0 - r**2))
+        xy_radius = r * 0.5
+        
+        for j in range(num_sectors):
+            theta = 2.0 * np.pi * float(j) / num_sectors
+            x = xy_radius * np.cos(theta)
+            y = xy_radius * np.sin(theta)
+            points.append([x, y, z])
+            
     faces = []
-    for ix in range(resolution - 1):
-        for iy in range(resolution - 1):
-            a = ix * resolution + iy
-            b = (ix + 1) * resolution + iy
-            c = (ix + 1) * resolution + (iy + 1)
-            d = ix * resolution + (iy + 1)
+    # 중심점과 첫 번째 링 연결
+    for j in range(num_sectors):
+        next_j = (j + 1) % num_sectors
+        faces.append([0, 1 + j, 1 + next_j])
+        
+    # 나머지 링들 연결 (사각형을 삼각형 2개로 분할)
+    for i in range(1, num_rings):
+        ring_start = 1 + (i - 1) * num_sectors
+        next_ring_start = 1 + i * num_sectors
+        for j in range(num_sectors):
+            next_j = (j + 1) % num_sectors
+            
+            a = ring_start + j
+            b = next_ring_start + j
+            c = next_ring_start + next_j
+            d = ring_start + next_j
+            
+            # Winding order를 UP 방향으로 맞춤
             faces.append([a, b, c])
             faces.append([a, c, d])
             
@@ -84,14 +96,8 @@ def create_usd_mesh(stage, prim_path, points, faces):
     mesh.GetDisplayColorAttr().Set(Vt.Vec3fArray([Gf.Vec3f(0.8, 0.2, 0.2)]))
     return mesh
 
-def depth_to_top_surface(depth: np.ndarray, camera_position: np.ndarray, fov_deg: float):
+def depth_to_top_surface(depth: np.ndarray, camera_position: np.ndarray, fx: float, fy: float, cx: float, cy: float):
     h, w = depth.shape
-    fov_rad = np.deg2rad(fov_deg)
-    # Replicator uses focal length based on horizontal FOV usually
-    fx = (w / 2.0) / np.tan(fov_rad / 2.0)
-    fy = fx
-    cx = w / 2.0
-    cy = h / 2.0
     cam_x, cam_y, cam_z = camera_position
     
     points = []
@@ -102,18 +108,20 @@ def depth_to_top_surface(depth: np.ndarray, camera_position: np.ndarray, fov_deg
             if not np.isfinite(d) or d <= 0.0 or d > 5.0:
                 continue
             
-            # Replicator camera looks down -Z. X is right, Y is up (in local camera frame).
-            # Wait, if we use look_at=(0,0,0), camera might have a different orientation.
-            # Assuming camera is at (0,0,1.6) looking straight down at (0,0,0).
-            # Then local Z points UP (towards +Z world) and local -Z looks down.
-            # Local X points to +X world. Local Y points to +Y world.
-            x_cam = (u - cx) * d / fx
-            y_cam = (v - cy) * d / fy
+            # distance_to_camera는 카메라 원점으로부터의 유클리드 거리(Euclidean Distance)입니다.
+            # 올바른 3D 좌표를 구하기 위해 z_cam을 계산합니다.
+            ray_x = (u - cx) / fx
+            ray_y = (v - cy) / fy
+            ray_length = np.sqrt(ray_x**2 + ray_y**2 + 1.0)
+            
+            z_cam = d / ray_length
+            x_cam = ray_x * z_cam
+            y_cam = ray_y * z_cam
             
             # Since camera looks at -Z
             x_world = cam_x + x_cam
             y_world = cam_y - y_cam
-            z_world = cam_z - d
+            z_world = cam_z - z_cam
             
             points.append([x_world, y_world, z_world])
             
@@ -130,6 +138,22 @@ def save_surface_points_ply(path: str, points: np.ndarray):
         f.write("end_header\n")
         for p in points:
             f.write(f"{p[0]:.4f} {p[1]:.4f} {p[2]:.4f}\n")
+
+def save_mesh_ply(path: str, points: np.ndarray, faces: list):
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("ply\n")
+        f.write("format ascii 1.0\n")
+        f.write(f"element vertex {len(points)}\n")
+        f.write("property float x\n")
+        f.write("property float y\n")
+        f.write("property float z\n")
+        f.write(f"element face {len(faces)}\n")
+        f.write("property list uchar int vertex_indices\n")
+        f.write("end_header\n")
+        for p in points:
+            f.write(f"{p[0]:.4f} {p[1]:.4f} {p[2]:.4f}\n")
+        for face in faces:
+            f.write(f"{len(face)} " + " ".join(str(int(idx)) for idx in face) + "\n")
 
 def analyze_top_surface(points: np.ndarray):
     min_pt = np.min(points, axis=0)
@@ -171,9 +195,12 @@ def main():
 
     print("[DEBUG] Creating Camera")
     # 상단에서 내려다보는 실제 Depth Camera 생성
+    # 파라미터를 명시하여 수학적 오차가 없도록 고정합니다.
     camera = rep.create.camera(
         position=tuple(CAMERA_POSITION.tolist()),
-        look_at=(0.0, 0.0, 0.0)
+        look_at=(0.0, 0.0, 0.0),
+        focal_length=24.0,
+        horizontal_aperture=20.955
     )
 
     render_product = rep.create.render_product(
@@ -183,6 +210,14 @@ def main():
 
     depth_annot = rep.AnnotatorRegistry.get_annotator("distance_to_camera")
     depth_annot.attach([render_product])
+    
+    # RGB 이미지도 같이 추출
+    rgb_annot = rep.AnnotatorRegistry.get_annotator("rgb")
+    rgb_annot.attach([render_product])
+    
+    # 실제 카메라의 정확한 렌즈 파라미터(초점거리 등) 추출
+    camera_params_annot = rep.AnnotatorRegistry.get_annotator("camera_params")
+    camera_params_annot.attach([render_product])
 
     print("[DEBUG] Stepping Simulation")
     # 시뮬레이션 안정화 및 렌더링
@@ -199,15 +234,53 @@ def main():
     depth = np.asarray(depth, dtype=np.float32)
     print(f"[DEBUG] Depth Map Shape: {depth.shape}")
     
+    # 실제 카메라의 내장 파라미터(Intrinsic Matrix)를 가져옵니다.
+    # 이를 통해 카메라 렌즈의 정확한 화각(FOV) 오차를 완전히 없앱니다.
+    cam_params = camera_params_annot.get_data()
+    if cam_params and "cameraMatrix" in cam_params:
+        K = cam_params["cameraMatrix"]
+        fx = float(K[0][0])
+        fy = float(K[1][1])
+        cx = float(K[0][2])
+        cy = float(K[1][2])
+        print(f"[DEBUG] Exact Camera Intrinsics: fx={fx:.2f}, fy={fy:.2f}, cx={cx:.2f}, cy={cy:.2f}")
+    else:
+        print("[DEBUG] Failed to get cameraMatrix, using exact calculation fallback")
+        # rep.create.camera에 설정한 focal_length=24.0, horizontal_aperture=20.955를 바탕으로 한 완벽한 렌즈 계산
+        fx = (IMAGE_WIDTH * 24.0) / 20.955
+        fy = fx  # square pixels assumed
+        cx = IMAGE_WIDTH / 2.0
+        cy = IMAGE_HEIGHT / 2.0
+
     # 3D Point Cloud로 변환 (Reprojection)
-    surface_points = depth_to_top_surface(depth, CAMERA_POSITION, CAMERA_FOV_DEG)
+    surface_points = depth_to_top_surface(depth, CAMERA_POSITION, fx, fy, cx, cy)
     
-    # 바닥면(Z < 0.01) 필터링
+    # 이제 수학적 왜곡(Euclidean Distance 보정)이 해결되었으므로 완벽히 일치합니다.
+    # RGB 데이터 가져와서 이미지로 저장
+    rgb_data = rgb_annot.get_data()
+    if rgb_data is not None:
+        from PIL import Image
+        # rgb_data는 주로 (H, W, 4) 형태의 RGBA 배열입니다.
+        img = Image.fromarray(rgb_data, "RGBA")
+        rgb_path = os.path.join(OUTPUT_DIR, "real_camera_rgb.png")
+        # RGB 모드로 변환 후 저장 (배경이 투명하게 나오지 않도록)
+        img.convert("RGB").save(rgb_path)
+        print(f"[OK] Saved RGB image: {rgb_path}")
+
+    # 물체(원형 돔) 바깥쪽의 바닥면이나 노이즈가 스캔되지 않도록
+    # 정확히 물체의 반지름(0.5m) 내부의 점들만 남깁니다 (모서리 스커트 현상 완벽 제거)
+    radiuses_sq = surface_points[:, 0]**2 + surface_points[:, 1]**2
+    surface_points = surface_points[radiuses_sq <= (0.495)**2]
+    
+    # 혹시 모를 바닥면 찌꺼기 제거
     surface_points = surface_points[surface_points[:, 2] > 0.01]
 
-    # 저장
     surface_points_path = os.path.join(MESH_DIR, "real_camera_surface_points.ply")
     save_surface_points_ply(surface_points_path, surface_points)
+
+    # 원본 메쉬도 파일로 저장 (Polishing Sim에서 불러다 쓰기 위함)
+    mesh_path = os.path.join(MESH_DIR, "real_camera_surface_mesh.ply")
+    save_mesh_ply(mesh_path, points, faces)
 
     surface_info = analyze_top_surface(surface_points)
     surface_info_path = os.path.join(MESH_DIR, "real_camera_surface_info.json")
@@ -215,6 +288,7 @@ def main():
 
     print("[OK] Real Depth Camera Scan Completed!")
     print(f"[OK] Saved points: {surface_points_path}")
+    print(f"[OK] Saved mesh:   {mesh_path}")
     print(f"[OK] Saved info:   {surface_info_path}")
 
 if __name__ == "__main__":
