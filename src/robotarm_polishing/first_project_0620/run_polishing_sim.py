@@ -217,23 +217,27 @@ def main():
     create_usd_mesh(stage, "/World/MagicMouseOriginal", mesh_points, mesh_faces)
     
     # 빨간 점들은 원본 포인트 클라우드 그대로 렌더링하여 형태 보존
-    for i, p in enumerate(raw_points[::10]):
+    # 너무 많은 구를 생성하면 로딩 시간이 길어지므로 100개 중 1개만 시각화합니다.
+    for i, p in enumerate(raw_points[::100]):
         world.scene.add(
             VisualSphere(
                 prim_path=f"/World/Targets/Point_{i}",
                 name=f"point_{i}",
                 position=p,
-                radius=0.001, # 점 크기를 더 작고 세밀하게 조정
+                radius=0.005, # 개수가 줄어든 대신 약간 더 크게 표시
                 color=np.array([1.0, 0.0, 0.0])
             )
         )
         
-    # 로봇이 실제로 따라갈 정렬된 지그재그(Raster) 경로 생성
-    points = generate_raster_path(raw_points, line_spacing=0.05)
+    # 로봇이 실제로 따라갈 정렬된 지그재그(Raster) 경로 생성 (검토를 위해 라인 간격을 넓혀 점 개수를 줄임)
+    points = generate_raster_path(raw_points, line_spacing=0.1)
     print(f"Generated raster path with {len(points)} points for robot tracking.")
     
     world.reset()
     robot_articulation.initialize()
+    
+    # 샌딩 패드가 로봇의 Articulation 트리에 병합되었으므로 추가적인 initialize()가 필요하지 않습니다.
+    # 터미널에서 로봇 관절의 일원으로서 패드의 모터 속도를 추출할 것입니다.
     
     # RMPFlow 제어기 초기화
     controller = RMPFlowController(
@@ -303,13 +307,18 @@ def main():
             normal = target_pos - center_of_curvature
             normal = normal / np.linalg.norm(normal)
             
-            # 툴이 표면을 수직으로 꾹 누르도록 회전 (로봇 끝단의 Z축이 표면 안쪽(-normal)을 향하도록 정렬)
-            target_orientation = z_align_quat(-normal)
+            # 툴의 패드가 옆면(L자 형태)에 있으므로, Z축 대신 옆면이 바닥을 향하도록 90도 회전 오프셋을 줍니다.
+            base_orientation = z_align_quat(-normal) # [w, x, y, z] 형태
             
-            # 툴 길이 오프셋을 적용한 최종 link_6 목표 좌표 계산
-            # 패드가 물체 표면에 완벽하게 밀착(흡착)되도록 오프셋을 조절합니다. (살짝 파고들도록 -5mm 보정)
-            CONTACT_OFFSET = -0.005
-            link_6_target_pos = target_pos + normal * (TOOL_OFFSET + CONTACT_OFFSET)
+            from scipy.spatial.transform import Rotation as R
+            # Isaac Sim의 [w, x, y, z]를 scipy의 [x, y, z, w]로 변환
+            # 툴이 Z축으로 올바르게 정렬되어 있으므로, 추가 회전 없이 기본 자세를 사용합니다.
+            base_orientation = z_align_quat(-normal) # [w, x, y, z] 형태
+            target_orientation = np.array(base_orientation)
+            
+            # 패드가 link_6의 Z축 방향으로 약 15cm 앞에 있으므로, Z축 방향(normal)으로 오프셋을 줍니다.
+            CONTACT_OFFSET = 0.005 # 표면에서 0.5cm 여유
+            link_6_target_pos = target_pos + normal * (0.15 + CONTACT_OFFSET)
             
             actions = controller.forward(
                 target_end_effector_position=link_6_target_pos,
@@ -334,7 +343,42 @@ def main():
                 current_target_idx += 1
                 
                 if current_target_idx % 100 == 0:
-                    print(f"Tracking point {current_target_idx}/{len(points)}")
+                    print(f"Tracking point {current_target_idx}/{len(points)} | Kinematic Pad Spinning Active")
+                
+                # 강제(Kinematic) 패드 회전: 매 프레임마다 Z축을 기준으로 회전시킵니다.
+                try:
+                    from pxr import UsdGeom, Gf
+                    import omni.usd
+                    stage = omni.usd.get_context().get_stage()
+                    pad_prim = stage.GetPrimAtPath("/World/M0609/m0609/m0609/link_6/sanding_kit/OnRobot_Sander_v2/tn__104327_")
+                    if not pad_prim.IsValid():
+                        # 대체 경로 시도
+                        pad_prim = stage.GetPrimAtPath("/World/M0609/World/m0609/m0609/link_6/sanding_kit/OnRobot_Sander_v2/tn__104327_")
+                    
+                    if pad_prim.IsValid():
+                        xform = UsdGeom.Xformable(pad_prim)
+                        rot_op = None
+                        for op in xform.GetOrderedXformOps():
+                            if op.GetOpType() == UsdGeom.XformOp.TypeRotateXYZ:
+                                rot_op = op
+                                break
+                        if not rot_op:
+                            rot_op = xform.AddRotateXYZOp()
+                        
+                        current_rot = rot_op.Get()
+                        if current_rot is None:
+                            current_rot = Gf.Vec3d(0, 0, 0)
+                        
+                        # 패드의 실제 회전축은 로컬 Y축입니다 (BBox 분석 결과: Y축이 가장 얇음 = 팽이처럼 도는 축)
+                        # Isaac Sim의 XformOp는 버전에 따라 Vec3f 또는 Vec3d를 반환하므로 타입 캐스팅
+                        if type(current_rot).__name__ == 'Vec3f':
+                            rot_op.Set(current_rot + Gf.Vec3f(0.0, 20.0, 0.0))
+                        else:
+                            rot_op.Set(current_rot + Gf.Vec3d(0.0, 20.0, 0.0))
+                    else:
+                        print(f"Tracking point {current_target_idx}/{len(points)} | Pad Prim NOT FOUND!")
+                except Exception as e:
+                    print(f"Tracking point {current_target_idx}/{len(points)} | Spin error: {e}")
 
 if __name__ == "__main__":
     main()
