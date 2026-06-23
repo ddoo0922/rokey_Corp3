@@ -92,21 +92,26 @@ def generate_raster_path(points, line_spacing=0.015):
     return np.array(raster_path)
 
 def z_align_quat(z_vec):
-    """Z축을 원하는 방향(z_vec)으로 정렬시키는 쿼터니언(w, x, y, z)을 계산합니다."""
+    """Z축을 원하는 방향(z_vec)으로 정렬하되, X축을 로봇 기준 정면(-X)으로 유지시켜 손목이 180도 꺾이는 특이점(Gimbal Lock)을 방지합니다."""
     z_vec = z_vec / np.linalg.norm(z_vec)
-    up = np.array([0.0, 0.0, 1.0])
-    axis = np.cross(up, z_vec)
-    axis_norm = np.linalg.norm(axis)
-    if axis_norm < 1e-6:
-        if z_vec[2] > 0:
-            return np.array([1.0, 0.0, 0.0, 0.0])
-        else:
-            return np.array([0.0, 1.0, 0.0, 0.0])
-    axis = axis / axis_norm
-    angle = np.arccos(np.clip(np.dot(up, z_vec), -1.0, 1.0))
-    w = np.cos(angle / 2)
-    s = np.sin(angle / 2)
-    return np.array([w, axis[0]*s, axis[1]*s, axis[2]*s])
+    
+    # 샌더의 X축(전면)이 로봇이 뻗는 방향(+X)을 바라보도록 설정하여 손목이 꼬이는 것을 방지
+    fwd = np.array([1.0, 0.0, 0.0])
+    
+    if abs(np.dot(fwd, z_vec)) > 0.99:
+        fwd = np.array([0.0, -1.0, 0.0])
+        
+    y_vec = np.cross(z_vec, fwd)
+    y_vec = y_vec / np.linalg.norm(y_vec)
+    
+    x_vec = np.cross(y_vec, z_vec)
+    x_vec = x_vec / np.linalg.norm(x_vec)
+    
+    R_mat = np.column_stack((x_vec, y_vec, z_vec))
+    from scipy.spatial.transform import Rotation
+    q = Rotation.from_matrix(R_mat).as_quat() # [x, y, z, w]
+    
+    return np.array([q[3], q[0], q[1], q[2]]) # [w, x, y, z] 반환
 def load_ply_mesh(path):
     points = []
     faces = []
@@ -452,13 +457,11 @@ def main():
             normal = normal / np.linalg.norm(normal)
             
             # --- 동적 TCP 제어 ---
-            # 1. 목표 회전: 샌더가 일자(Straight) 형태이므로 로봇 끝단(link_6)의 Z축을 바로 표면 안쪽(-normal)으로 일치시킵니다.
+            # 1. 목표 회전: 샌더가 표면 안쪽(-normal)을 향하게 합니다.
             base_orientation = z_align_quat(-normal) # [w, x, y, z] 형태
-            r_base = R.from_quat([base_orientation[1], base_orientation[2], base_orientation[3], base_orientation[0]])
-            r_target_link6 = r_base # 90도 회전 오프셋 제거!
             
-            quat_target = r_target_link6.as_quat() # [x,y,z,w]
-            target_orientation = np.array([quat_target[3], quat_target[0], quat_target[1], quat_target[2]]) # [w,x,y,z]
+            # 이전 답변에서 잘못 추가했던 90도 오프셋을 완전히 제거합니다! (이것 때문에 샌더가 옆을 보고 있었습니다)
+            target_orientation = np.array(base_orientation) # [w, x, y, z]
             
             # 2. 어드미턴스 제어: 센서 힘 읽기
             contact_reading = contact_sensor.get_current_frame()
@@ -495,7 +498,7 @@ def main():
                 from omni.isaac.core.utils.types import ArticulationAction
                 # 상태값이 아닌 실제 모터의 목표 속도(PD 타겟)를 설정해야 합니다.
                 pad_action = ArticulationAction(
-                    joint_velocities=np.array([5.0]), # 속도 제어
+                    joint_velocities=np.array([10.0]), # 속도 제어
                     joint_indices=np.array([6])
                 )
                 robot_articulation.apply_action(pad_action)
