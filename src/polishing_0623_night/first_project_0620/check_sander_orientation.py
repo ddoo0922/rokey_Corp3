@@ -1,0 +1,15 @@
+from isaacsim import SimulationApp
+simulation_app = SimulationApp({"headless": True})
+from pxr import Usd, UsdGeom, Gf
+stage = Usd.Stage.Open('/home/rokey/cobot4_ws/Downloads/OnRobot_Sander_v2.usd')
+bbox_cache = UsdGeom.BBoxCache(Usd.TimeCode.Default(), ['default'])
+root = stage.GetDefaultPrim()
+bbox = bbox_cache.ComputeWorldBound(root).GetRange()
+print("====================")
+print("Min:", bbox.GetMin())
+print("Max:", bbox.GetMax())
+size = bbox.GetMax() - bbox.GetMin()
+print("Size:", size)
+print("Largest dimension is:", ["X", "Y", "Z"][list(size).index(max(size))])
+print("====================")
+simulation_app.close()
