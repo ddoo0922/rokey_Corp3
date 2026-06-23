@@ -252,5 +252,13 @@
 			<child link="tool0"/>
 		</joint>
 
+		<!-- 샌딩 패드 끝단 TCP(Tool Center Point) 추가 -->
+		<link name="pad_tip"/>
+		<joint name="link_6-pad_tip" type="fixed">
+			<!-- 손목 앞쪽(+Z)으로 8.5cm 지점 -->
+			<origin rpy="0 0 0" xyz="0 0 0.085"/>
+			<parent link="link_6"/>
+			<child link="pad_tip"/>
+		</joint>
 
 </robot>

@@ -1,4 +1,5 @@
 import sys
+import os
 import numpy as np
 from isaacsim import SimulationApp
 
@@ -9,12 +10,17 @@ from omni.isaac.core.objects import VisualSphere
 from isaacsim.core.prims import SingleArticulation
 from omni.isaac.core.utils.prims import create_prim
 
+# 스크립트 위치 기준 경로 설정
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+_POLISHING_DIR = os.path.dirname(_SCRIPT_DIR)  # src/robotarm_polishing
+_SRC_DIR = os.path.dirname(_POLISHING_DIR)      # src
+
 # RMPFlow 컨트롤러 경로 추가
-sys.path.append("/home/rokey/cobot4_ws/rokey_Corp3/src/robotarm_polishing/M0609/rmpflow")
+sys.path.append(os.path.join(_POLISHING_DIR, "M0609", "rmpflow"))
 from m0609_rmpflow_controller import RMPFlowController
 
-ROBOT_USD_PATH = "/home/rokey/cobot4_ws/rokey_Corp3/src/robotarm_polishing/first_project_0620/m0609_polishing.usd"
-PLY_PATH = "/home/rokey/cobot4_ws/rokey_Corp3/src/scan_project/output/mesh/real_camera_surface_points.ply"
+ROBOT_USD_PATH = os.path.join(_SCRIPT_DIR, "m0609_polishing.usd")
+PLY_PATH = os.path.join(_SRC_DIR, "scan_project", "output", "mesh", "real_camera_surface_points.ply")
 
 def load_ply_points(path):
     points = []
@@ -211,10 +217,19 @@ def main():
     import omni.usd
     stage = omni.usd.get_context().get_stage()
     
-    ORIGINAL_MESH_PATH = "/home/rokey/cobot4_ws/rokey_Corp3/src/scan_project/output/mesh/real_camera_surface_mesh.ply"
+    ORIGINAL_MESH_PATH = os.path.join(_SRC_DIR, "scan_project", "output", "mesh", "real_camera_surface_mesh.ply")
     mesh_points, mesh_faces = load_ply_mesh(ORIGINAL_MESH_PATH)
     mesh_points = mesh_points * 0.3
     create_usd_mesh(stage, "/World/MagicMouseOriginal", mesh_points, mesh_faces)
+    
+    # [물리] Magic Mouse 메쉬에 Static Collider 추가 (패드와 물리적 접촉 가능)
+    from pxr import UsdPhysics as UsdPhys
+    mouse_prim = stage.GetPrimAtPath("/World/MagicMouseOriginal")
+    if mouse_prim.IsValid():
+        UsdPhys.CollisionAPI.Apply(mouse_prim)
+        UsdPhys.MeshCollisionAPI.Apply(mouse_prim)
+        # Static Collider = CollisionAPI만 적용 (RigidBodyAPI 없음 = 고정)
+        print("[INFO] Applied Static Collider to Magic Mouse mesh")
     
     # 빨간 점들은 원본 포인트 클라우드 그대로 렌더링하여 형태 보존
     # 너무 많은 구를 생성하면 로딩 시간이 길어지므로 100개 중 1개만 시각화합니다.
@@ -236,14 +251,28 @@ def main():
     world.reset()
     robot_articulation.initialize()
     
-    # 샌딩 패드가 로봇의 Articulation 트리에 병합되었으므로 추가적인 initialize()가 필요하지 않습니다.
-    # 터미널에서 로봇 관절의 일원으로서 패드의 모터 속도를 추출할 것입니다.
+    # 패드 모터가 articulation의 7번째 DOF로 포함됨
+    num_dofs = robot_articulation.num_dof
+    dof_names = robot_articulation.dof_names
+    print(f"[INFO] Robot DOFs: {num_dofs}, Names: {dof_names}")
+    
+    # pad_joint DOF 인덱스 찾기 (보통 마지막 = index 6)
+    pad_dof_idx = None
+    if dof_names:
+        for i, name in enumerate(dof_names):
+            if 'pad' in name.lower():
+                pad_dof_idx = i
+                break
+    if pad_dof_idx is not None:
+        print(f"[INFO] Pad motor DOF index: {pad_dof_idx} ('{dof_names[pad_dof_idx]}')")
+    else:
+        print("[WARN] pad_joint DOF not found in articulation — motor will use USD drive defaults")
     
     # RMPFlow 제어기 초기화
     controller = RMPFlowController(
         name="polishing_controller",
         robot_articulation=robot_articulation,
-        urdf_path="/home/rokey/cobot4_ws/rokey_Corp3/src/robotarm_polishing/M0609/doosan-robot2/urdf/m0609_isaac_sim.urdf",
+        urdf_path=os.path.join(_POLISHING_DIR, "M0609", "doosan-robot2", "urdf", "m0609_isaac_sim.urdf"),
         end_effector_frame_name="link_6"
     )
     
@@ -307,16 +336,12 @@ def main():
             normal = target_pos - center_of_curvature
             normal = normal / np.linalg.norm(normal)
             
-            # 툴의 패드가 옆면(L자 형태)에 있으므로, Z축 대신 옆면이 바닥을 향하도록 90도 회전 오프셋을 줍니다.
+            # 1. 목표 회전: 샌더가 일자(Straight) 형태이므로 로봇 끝단의 Z축을 바로 표면 법선(-normal)으로 일치시킵니다.
             base_orientation = z_align_quat(-normal) # [w, x, y, z] 형태
             
-            from scipy.spatial.transform import Rotation as R
-            # Isaac Sim의 [w, x, y, z]를 scipy의 [x, y, z, w]로 변환
-            # 툴이 Z축으로 올바르게 정렬되어 있으므로, 추가 회전 없이 기본 자세를 사용합니다.
-            base_orientation = z_align_quat(-normal) # [w, x, y, z] 형태
             target_orientation = np.array(base_orientation)
             
-            # 패드가 link_6의 Z축 방향으로 약 15cm 앞에 있으므로, Z축 방향(normal)으로 오프셋을 줍니다.
+            # 패드가 link_6 끝단에서 약 15cm 떨어져 있으므로, 표면 법선(normal) 방향으로 오프셋 유지
             CONTACT_OFFSET = 0.005 # 표면에서 0.5cm 여유
             link_6_target_pos = target_pos + normal * (0.15 + CONTACT_OFFSET)
             
@@ -329,7 +354,22 @@ def main():
             # 현재 로봇 끝단(link_6)의 실제 위치 가져오기
             link_6_path = "/World/M0609/m0609/m0609/link_6"
             if get_prim_at_path(link_6_path):
-                tcp_pos, _ = get_world_pose(link_6_path)
+                tcp_pos, tcp_rot = get_world_pose(link_6_path)
+                
+                # [디버깅] 타겟 마커 시각화 (현재 RMPFlow가 향하는 목표 위치 - 파란색 구)
+                target_marker_path = "/World/TargetMarker"
+                if not get_prim_at_path(target_marker_path):
+                    world.scene.add(VisualSphere(
+                        prim_path=target_marker_path,
+                        name="target_marker",
+                        position=link_6_target_pos,
+                        radius=0.015,
+                        color=np.array([0.0, 0.0, 1.0])
+                    ))
+                else:
+                    world.scene.get_object("target_marker").set_world_pose(position=link_6_target_pos)
+                
+                error_dist = float(np.linalg.norm(link_6_target_pos - tcp_pos))
                 
                 # 앞으로 훑고 지나갈 미래의 경로(최대 500개 점)를 선으로 연결하여 시각화 (RViz Local Path 스타일)
                 lookahead_pts = points[current_target_idx : current_target_idx + 500]
@@ -339,46 +379,30 @@ def main():
                     future_path_prim.GetPointsAttr().Set(Vt.Vec3fArray(vec3f_pts))
                     future_path_prim.GetCurveVertexCountsAttr().Set([len(lookahead_pts)])
                 
-                # 로봇 제어 속도를 기존처럼 빠르게 복구 (매 스텝마다 목표점 갱신)
-                current_target_idx += 1
+                # [디버깅] 목표 도달 대기 로직 (오차가 2cm 이내거나 너무 오래 걸리면 다음 점으로 이동)
+                if not hasattr(controller, 'step_count_for_target'):
+                    controller.step_count_for_target = 0
+                controller.step_count_for_target += 1
                 
-                if current_target_idx % 100 == 0:
-                    print(f"Tracking point {current_target_idx}/{len(points)} | Kinematic Pad Spinning Active")
+                if error_dist < 0.02 or controller.step_count_for_target > 60:
+                    current_target_idx += 1
+                    controller.step_count_for_target = 0
                 
-                # 강제(Kinematic) 패드 회전: 매 프레임마다 Z축을 기준으로 회전시킵니다.
-                try:
-                    from pxr import UsdGeom, Gf
-                    import omni.usd
-                    stage = omni.usd.get_context().get_stage()
-                    pad_prim = stage.GetPrimAtPath("/World/M0609/m0609/m0609/link_6/sanding_kit/OnRobot_Sander_v2/tn__104327_")
-                    if not pad_prim.IsValid():
-                        # 대체 경로 시도
-                        pad_prim = stage.GetPrimAtPath("/World/M0609/World/m0609/m0609/link_6/sanding_kit/OnRobot_Sander_v2/tn__104327_")
-                    
-                    if pad_prim.IsValid():
-                        xform = UsdGeom.Xformable(pad_prim)
-                        rot_op = None
-                        for op in xform.GetOrderedXformOps():
-                            if op.GetOpType() == UsdGeom.XformOp.TypeRotateXYZ:
-                                rot_op = op
-                                break
-                        if not rot_op:
-                            rot_op = xform.AddRotateXYZOp()
-                        
-                        current_rot = rot_op.Get()
-                        if current_rot is None:
-                            current_rot = Gf.Vec3d(0, 0, 0)
-                        
-                        # 패드의 실제 회전축은 로컬 Y축입니다 (BBox 분석 결과: Y축이 가장 얇음 = 팽이처럼 도는 축)
-                        # Isaac Sim의 XformOp는 버전에 따라 Vec3f 또는 Vec3d를 반환하므로 타입 캐스팅
-                        if type(current_rot).__name__ == 'Vec3f':
-                            rot_op.Set(current_rot + Gf.Vec3f(0.0, 20.0, 0.0))
-                        else:
-                            rot_op.Set(current_rot + Gf.Vec3d(0.0, 20.0, 0.0))
-                    else:
-                        print(f"Tracking point {current_target_idx}/{len(points)} | Pad Prim NOT FOUND!")
-                except Exception as e:
-                    print(f"Tracking point {current_target_idx}/{len(points)} | Spin error: {e}")
+                # [물리 모터] pad_joint는 USD DriveAPI의 targetVelocity로 자동 회전합니다.
+                # ArticulationAction으로 추가 제어가 필요한 경우 아래 코드 사용:
+                if pad_dof_idx is not None and num_dofs > 6:
+                    # 패드 모터에 속도 명령 (deg/s → rad/s 변환 불필요, Isaac Sim이 자동 처리)
+                    from omni.isaac.core.utils.types import ArticulationAction
+                    joint_velocities = np.zeros(num_dofs)
+                    joint_velocities[pad_dof_idx] = 3000.0  # 3000 deg/s ≈ 500 RPM
+                    pad_action = ArticulationAction(joint_velocities=joint_velocities)
+                    robot_articulation.apply_action(pad_action)
+                
+                if controller.step_count_for_target % 20 == 0:
+                    # 패드 모터 속도 및 위치 오차 모니터링
+                    vel = robot_articulation.get_joint_velocities()
+                    pad_vel_str = f"{vel[pad_dof_idx]:.1f} deg/s" if pad_dof_idx is not None and vel is not None else "N/A"
+                    print(f"[DEBUG] Point {current_target_idx}/{len(points)} | Error: {error_dist*100:.1f} cm | Wait: {controller.step_count_for_target}/60 | Pad: {pad_vel_str}")
 
 if __name__ == "__main__":
     main()
